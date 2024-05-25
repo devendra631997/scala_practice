@@ -1,7 +1,6 @@
 class Instrument
-trait Saxo(
+trait Saxo:
     def play() =  println("i am here")
-)
 
 class Baryton extends Instrument {
 
@@ -13,5 +12,6 @@ object Main {
   def main(args: Array[String]): Unit = {
         val baryton = new Baryton() with Saxo
         println(baryton)
+        baryton.play()
   }
 }
